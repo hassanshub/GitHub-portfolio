@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddRouteActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:weightSum="10">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="9"
+        android:orientation="horizontal"
+        android:background="@color/background"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/logo"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Samaan La Chalo"
+            android:textSize="36dp"
+            android:textStyle="bold"
+            android:textColor="#040E6A"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="20dp">
+
+        <EditText
+            android:id="@+id/etARName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Name"
+            android:textSize="20dp"
+            android:padding="20dp"/>
+
+        <EditText
+            android:id="@+id/etARContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Contact Number"
+            android:textSize="20dp"
+            android:padding="20dp"/>
+
+        <EditText
+            android:id="@+id/etARStartLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Starting Location"
+            android:textSize="20dp"
+            android:padding="20dp"/>
+
+        <EditText
+            android:id="@+id/etAREndLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Ending Location"
+            android:textSize="20dp"
+            android:padding="20dp"/>
+
+        <EditText
+            android:id="@+id/etARDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Date of the Journey "
+            android:textSize="20dp"
+            android:padding="20dp"/>
+
+        <EditText
+            android:id="@+id/etARSpace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Available Space"
+            android:textSize="20dp"
+            android:padding="20dp"/>
+
+        <Button
+            android:id="@+id/btnARAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Route"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/Main"/>
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

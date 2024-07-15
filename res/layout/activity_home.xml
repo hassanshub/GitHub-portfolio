@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:orientation="vertical"
+    android:weightSum="11">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_weight="5"
+        android:background="@color/background">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/logo"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Samaan La Chalo"
+            android:textSize="36dp"
+            android:textStyle="bold"
+            android:textColor="#040E6A"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/homeFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <fragment
+            android:id="@+id/fragRoutes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.example.samaanlachalo.RoutesFragment"/>
+
+        <fragment
+            android:id="@+id/fragParcels"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.example.samaanlachalo.ParcelsFragment"/>
+
+        <fragment
+            android:id="@+id/fragProfile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.example.samaanlachalo.ProfileFragment"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:orientation="horizontal"
+        android:background="@color/background"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/btnHPRoutes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Routes"
+            android:layout_weight="1"
+            android:backgroundTint="@color/background"/>
+
+        <Button
+            android:id="@+id/btnHPParcels"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Parcels"
+            android:layout_weight="1"
+            android:backgroundTint="@color/background"/>
+
+        <Button
+            android:id="@+id/btnHPProfile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Profile"
+            android:layout_weight="1"
+            android:backgroundTint="@color/background"/>
+
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RoutesFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="11"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_weight="5"
+            android:background="@color/background"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/etSearchRoute"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Search Routes"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/searchbutton"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/RVRoutes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </ScrollView>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@color/background"
+            android:layout_weight="5">
+
+            <Button
+                android:id="@+id/btnAddRoute"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Add New Route"
+                android:backgroundTint="@color/Main"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
